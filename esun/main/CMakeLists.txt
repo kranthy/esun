@@ -1,2 +1,2 @@
-idf_component_register(SRCS "esun.c" "nrgy/monitor.c" "sys/health.c"
-                    INCLUDE_DIRS "." "nrgy" "sys")
+idf_component_register(SRCS "esun.c" "nrgy/monitor.c" "sys/health.c" "wifi/softap.c" "ble/server.c" "blufi/blufi.c"
+                    INCLUDE_DIRS ".")
