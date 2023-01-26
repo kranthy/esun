@@ -6,10 +6,10 @@
 /* Heartbeat rask */
 static void ble_srvr_task(void *args)
 {
-    while (1) {
-        printf("BLE Server: Minimum free heap size: %ld bytes\n", esp_get_minimum_free_heap_size());
-        vTaskDelay(pdMS_TO_TICKS(5000));
-    }
+  while (1) {
+    printf("BLE Server: Minimum free heap size: %ld bytes\n", esp_get_minimum_free_heap_size());
+    vTaskDelay(pdMS_TO_TICKS(5000));
+  }
 }
 
 void ble_srvr_init(void)

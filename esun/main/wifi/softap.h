@@ -21,4 +21,5 @@ typedef void wifi_event_handler_t(void* arg, esp_event_base_t evt_base,
                         int32_t evt_id, void* evt_data);
 
 /* Monitor the system health, creates heartbeat task */
-void wifi_sap_init(wifi_event_handler_t hndlr);
+//void wifi_sap_init(wifi_event_handler_t hndlr);
+void wifi_sap_init();

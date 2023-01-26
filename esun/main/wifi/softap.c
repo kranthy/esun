@@ -1,11 +1,6 @@
 /* Copyright @ Blu Systems Pvt Ltd */
 #include "wifi/softap.h"
 
-#define EXAMPLE_ESP_WIFI_SSID      CONFIG_ESP_WIFI_SSID
-#define EXAMPLE_ESP_WIFI_PASS      CONFIG_ESP_WIFI_PASSWORD
-#define EXAMPLE_ESP_WIFI_CHANNEL   CONFIG_ESP_WIFI_CHANNEL
-#define EXAMPLE_MAX_STA_CONN       CONFIG_ESP_MAX_STA_CONN
-
 static const char *TAG = "WIFI:SAP";
 
 /* This needs to be impl by app */
@@ -21,12 +16,13 @@ static void wifi_evt_handler(void* arg, esp_event_base_t event_base,
         ESP_LOGI(TAG, "station "MACSTR" leave, AID=%d",
                  MAC2STR(event->mac), event->aid);
     } else {
-        ESP_LOGI(TAG, "Got cb evt %d\n", event_id);
+        //ESP_LOGI(TAG, "Got cb evt %d\n", event_id);
     }
 }
 
 void wifi_sap_init(void)
 {
+#if 0
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_loop_create_default());
     esp_netif_create_default_wifi_ap();
@@ -64,4 +60,5 @@ void wifi_sap_init(void)
     ESP_LOGI(TAG, "wifi_init_softap finished. SSID:%s password:%s channel:%d",
              EXAMPLE_ESP_WIFI_SSID, EXAMPLE_ESP_WIFI_PASS, EXAMPLE_ESP_WIFI_CHANNEL);
 
+#endif //
 }

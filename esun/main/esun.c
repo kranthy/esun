@@ -9,7 +9,9 @@
 
 void app_main(void)
 {
-
+  
+  //nvs_init();
+  
   health_init();
 
   ble_srvr_init();
