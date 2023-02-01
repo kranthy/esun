@@ -3,5 +3,8 @@
     "idf.openOcdConfigs": [
         "board/esp32c3-bridge.cfg"
     ],
-    "idf.flashType": "UART"
+    "idf.flashType": "UART",
+    "files.associations": {
+        "config.h": "c"
+    }
 }

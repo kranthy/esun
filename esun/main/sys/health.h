@@ -1,4 +1,6 @@
 /* Copyright @ Blu Systems Pvt Ltd */
+#ifndef __HEALTH_H
+#define __HEALTH_H
 
 #include <string.h>
 #include <stdio.h>
@@ -11,3 +13,5 @@
 
 /* Monitor the system health, creates heartbeat task */
 void health_init(void);
+
+#endif // #ifndef __HEALTH_H

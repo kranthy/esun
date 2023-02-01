@@ -1,4 +1,6 @@
 /* Copyright @ Blu Systems Pvt Ltd */
+#ifndef __SOFTAP_H
+#define __SOFTAP_H
 
 #include <string.h>
 #include <stdio.h>
@@ -23,3 +25,7 @@ typedef void wifi_event_handler_t(void* arg, esp_event_base_t evt_base,
 /* Monitor the system health, creates heartbeat task */
 //void wifi_sap_init(wifi_event_handler_t hndlr);
 void wifi_sap_init();
+
+void wifi_init();
+
+#endif // #ifndef __SOFTAP_H

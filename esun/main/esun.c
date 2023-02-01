@@ -6,11 +6,12 @@
 #include "wifi/softap.h"
 #include "blufi/blufi.h"
 #include "ble/server.h"
+#include "nvs/nvs.h"
 
 void app_main(void)
 {
-  
-  //nvs_init();
+  /* Init nvs flash */
+  nvs_init();
   
   health_init();
 

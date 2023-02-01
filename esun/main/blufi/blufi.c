@@ -1,9 +1,15 @@
 /* Copyright @ Blu Systems Pvt Ltd */
+#include "esp_wifi.h"
+
 #include "blufi/blufi.h"
+#include "cmn/cmn.h"
+#include "wifi/softap.h"
 
 // static const char *TAG = "BLUFI";
 
-void blufi_init(void) {}
+void blufi_init(void) {
+    wifi_init();
+}
 
 esp_err_t esp_blufi_host_init(void) {
   int ret;
