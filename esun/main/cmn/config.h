@@ -38,4 +38,16 @@ extern adc_channel_t channel[3];
 extern adc_channel_t channel[1];
 #endif
 
+#if CONFIG_IDF_TARGET_ESP32H2 || CONFIG_IDF_TARGET_ESP32C2
+#define CONFIG_GPIO_OUTPUT_0    (8) 
+#define CONFIG_GPIO_OUTPUT_1    (9)
+#define CONFIG_GPIO_INPUT_0     (4)
+#define CONFIG_GPIO_INPUT_1     (5)
+#else
+#define CONFIG_GPIO_OUTPUT_0    (18) 
+#define CONFIG_GPIO_OUTPUT_1    (19)
+#define CONFIG_GPIO_INPUT_0     (4)
+#define CONFIG_GPIO_INPUT_1     (5)
+#endif // gpio 
+
 #endif // __CONFIG_H
