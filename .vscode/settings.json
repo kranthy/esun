@@ -1,4 +1,4 @@
-{
+/* {
     "idf.adapterTargetName": "esp32c3",
     "idf.openOcdConfigs": [
         "board/esp32c3-bridge.cfg"
@@ -7,4 +7,10 @@
     "files.associations": {
         "config.h": "c"
     }
+} */
+{
+    "idf.adapterTargetName": "esp32c3",
+    "idf.openOcdConfigs": [
+        "board/esp32c3-builtin.cfg",
+    ]
 }
