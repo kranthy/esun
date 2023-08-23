@@ -1,15 +1,15 @@
-/* Copyright @ Blu Systems Pvt Ltd */
+/*
+ * SPDX-FileCopyrightText: 2021-2022 Espressif Systems (Shanghai) CO LTD
+ *
+ * SPDX-License-Identifier: Unlicense OR CC0-1.0
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-#include "blufi/blufi.h"
-#include "blufi/blufi_sec.h"
-
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/event_groups.h"
-
 #include "esp_system.h"
 #include "esp_wifi.h"
 #include "esp_event.h"
@@ -17,6 +17,9 @@
 #include "nvs_flash.h"
 #include "esp_random.h"
 #include "esp_bt.h"
+
+#include "esp_blufi_api.h"
+#include "blufi.h"
 
 #include "mbedtls/aes.h"
 #include "mbedtls/dhm.h"
